@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.3)
 
-project(gstbluetoothaudiosource)
+project(gstbluetoothaudiosrc)
 
 find_package(PkgConfig REQUIRED)
 
@@ -26,7 +26,7 @@ target_include_directories(${PROJECT_NAME}
 
 target_sources(${PROJECT_NAME}
     PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/gstbluetoothaudiosource.c)
+        ${CMAKE_CURRENT_SOURCE_DIR}/gstbluetoothaudiosrc.c)
 
 target_link_libraries(${PROJECT_NAME}
     PUBLIC
