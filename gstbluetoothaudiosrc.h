@@ -46,6 +46,18 @@ struct _GstBluetoothAudioSrc
   guint32 buffer_size;
   guint32 buffer_write_offset;
 
+  guint32 frame_rate;
+  guint8 channels;
+  guint8 bps;
+  guint32 bitrate;
+
+  gboolean reset;
+  gboolean playing;
+  gboolean buffering;
+
+  guint64 clock_base;
+  guint64 clock;
+
   GMutex lock;
 };
 
